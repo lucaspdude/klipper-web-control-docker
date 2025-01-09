@@ -28,6 +28,8 @@ services:
     # put <container_dev> into your printer.cfg
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0
+      - /dev/video0:/dev/video0
+      - /dev/video1:/dev/video1
 
   ##################################################################
   # Example config for a second printer on a different serial port
