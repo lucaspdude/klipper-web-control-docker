@@ -23,7 +23,7 @@ services:
       - ./config:/home/klippy/.config
       - moonraker_data:/home/klippy/.moonraker_database
       # - <<your_config_path>>:/home/klippy/.config
-      # - ./printer.cfg:/home/klippy/.config/printer.cfg
+      - ./printer.cfg:/home/klippy/.config/ender3.cfg
     # mount serial device - take care to grant sufficient permissions to the device: <host_dev>:<container_dev>
     # put <container_dev> into your printer.cfg
     devices:
